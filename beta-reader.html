@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to become a beta reader for Ashfall Crown by A. W. Ashford.">
+  <title>Beta Reader Program | Ashfall Crown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AC</span>
+      <span>Ashfall Crown</span>
+    </a>
+    <nav>
+      <a href="index.html">Return to Book Site</a>
+    </nav>
+  </header>
+
+  <main class="application-page">
+    <section class="application-intro">
+      <p class="eyebrow">A. W. Ashford Invites You</p>
+      <h1>Become a Beta Reader</h1>
+      <p>
+        Read <em>Ashfall Crown</em> before publication and share candid, constructive
+        feedback that will help strengthen the final novel.
+      </p>
+    </section>
+
+    <section class="application-layout">
+      <aside class="expectations">
+        <h2>What to expect</h2>
+        <ul>
+          <li>An advance digital copy of the manuscript</li>
+          <li>A suggested reading and feedback deadline</li>
+          <li>Questions covering pacing, characters, clarity, and emotional impact</li>
+          <li>No professional editing experience required</li>
+        </ul>
+        <p class="privacy-note">
+          Applicant information should be used only for the beta-reader program and
+          author updates you expressly agree to receive.
+        </p>
+      </aside>
+
+      <!--
+        FORM SETUP:
+        Replace "https://formspree.io/f/YOUR_FORM_ID" with your live Formspree endpoint.
+        Instructions are included in README.txt.
+      -->
+      <form class="application-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+
+        <label>
+          Email address
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+
+        <label>
+          Preferred reading format
+          <select name="format" required>
+            <option value="">Choose one</option>
+            <option>PDF</option>
+            <option>EPUB</option>
+            <option>Microsoft Word</option>
+            <option>No preference</option>
+          </select>
+        </label>
+
+        <label>
+          What kinds of fantasy do you enjoy?
+          <textarea name="fantasy_preferences" rows="4" required></textarea>
+        </label>
+
+        <label>
+          Have you beta read a book before?
+          <select name="experience" required>
+            <option value="">Choose one</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </label>
+
+        <label>
+          Why are you interested in reading Ashfall Crown?
+          <textarea name="interest" rows="5" required></textarea>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="commitment" required>
+          <span>I understand that this is an unpublished manuscript and agree not to copy, distribute, or share it.</span>
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="updates">
+          <span>I would also like to receive occasional book and publication updates.</span>
+        </label>
+
+        <input type="hidden" name="_subject" value="New Ashfall Crown Beta Reader Application">
+        <button class="button primary submit-button" type="submit">Submit Application</button>
+        <p class="form-note">Applications are reviewed by the author. Submission does not guarantee selection.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> A. W. Ashford. All rights reserved.</p>
+    <a href="index.html">Ashfall Crown</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
